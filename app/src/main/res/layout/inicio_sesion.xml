@@ -9,7 +9,7 @@
         android:id="@+id/products"
         android:layout_width="240dp"
         android:layout_height="190dp"
-        android:src="@mipmap/ic_products_foreground"
+        android:src="@mipmap/ic_maquillaje_foreground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/products" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -51,6 +52,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/eye"
+            app:tint="@color/rose8"
+            app:layout_constraintEnd_toEndOf="@id/correo"
+            app:layout_constraintTop_toTopOf="@id/correo"
+            app:layout_constraintBottom_toBottomOf="@id/correo" />
+
         <TextView
             android:id="@+id/contraseña"
             android:layout_width="wrap_content"
@@ -58,15 +69,114 @@
             android:layout_marginTop="20dp"
             android:paddingVertical="10dp"
             android:paddingLeft="10dp"
-            android:paddingRight="230dp"
-            android:text="Correo"
+            android:paddingRight="200dp"
+            android:text="Contraseña"
             android:textColor="@color/rose9"
             android:background="@drawable/ic_btn_gray_rose"
             app:layout_constraintTop_toBottomOf="@id/correo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/eye"
+            app:tint="@color/rose8"
+            app:layout_constraintEnd_toEndOf="@id/contraseña"
+            app:layout_constraintTop_toTopOf="@id/contraseña"
+            app:layout_constraintBottom_toBottomOf="@id/contraseña" />
+
+        <TextView
+            android:id="@+id/iniciarsesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="80dp"
+            android:paddingVertical="10dp"
+            android:text="Iniciar sesion"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/btn_iniciar_sesion"
+            app:layout_constraintTop_toBottomOf="@id/contraseña"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Olvidaste tu contraseña"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/iniciarsesion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/logincon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Iniciar sesion con"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blologin" />
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintTop_toBottomOf="@id/logincon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_google"
+        app:layout_constraintTop_toBottomOf="@id/logincon"
+        app:layout_constraintEnd_toStartOf="@id/face" />
+
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_apple"
+        app:layout_constraintTop_toBottomOf="@id/logincon"
+        app:layout_constraintStart_toEndOf="@id/face" />
+
+    <TextView
+        android:id="@+id/aunno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="60dp"
+        android:text="¿Aún no tienes una cuenta?"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/apple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Registrate"
+        android:textColor="@color/rose3"
+        app:layout_constraintTop_toBottomOf="@id/apple"
+        app:layout_constraintStart_toEndOf="@id/aunno"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
